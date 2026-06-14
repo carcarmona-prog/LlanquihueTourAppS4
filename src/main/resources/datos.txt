@@ -1,0 +1,8 @@
+//datos de los tours ofrecidos
+
+Costanera de llanquihue;Llanquihue;40;100.000
+Humedales urbanos;Llanquihue;50;120.000
+Saltos del Petrohué;Alrededores;120;180.000
+Frutillar Bajo;Puerto Varas;20;90.000
+Volcán Osorno;Osorno;140;200.000
+Puerto Varas;Llanquihue;120;150.000
