@@ -15,7 +15,7 @@ import java.util.List;
     List<Destinos> listaDestinos = new ArrayList<>();
 
 
-    /** Creamos una clase Public para realizar la lógica de separar los atributos leidos por el FileReader,
+    /** Creamos una clase Public para realizar la lógica de separar los atributos leídos por el FileReader,
      * dentro de un try catch para evitar errores de lectura
      */
 
