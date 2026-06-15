@@ -1,7 +1,13 @@
 👤 Autor del proyecto:
+
  Carlos Estivens Carmona Barrteo
-Carrera: Analista Programador Computacional.
+
+Carrera:
+
+Analista Programador Computacional.
+
 Sede: Duoc uc sede online
+
 📘 Descripción general del sistema
 LlanquihueTourAppS4: Este codigo se basa en leer un archivo de texto.txt mediante interfaces y Arraylist con estructuras separadas y ordenadas, creando clases especificas para su ejecucion.
 
