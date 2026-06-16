@@ -1,9 +1,15 @@
-👤 Autor del proyecto
-Nombre completo: Carlos Estivens Carmona Barrteo
-Carrera: Analista Programador Computacional.
+👤 Autor del proyecto:
+
+ Carlos Estivens Carmona Barrteo
+
+Carrera:
+
+Analista Programador Computacional.
+
 Sede: Duoc uc sede online
+
 📘 Descripción general del sistema
-LlanquihueTourAppS4: Este codigo se basa en leer un archivo de texto.txt con estructuras separadas y ordenadas, creando clases especificas para su ejecucion.
+LlanquihueTourAppS4: Este codigo se basa en leer un archivo de texto.txt mediante interfaces y Arraylist con estructuras separadas y ordenadas, creando clases especificas para su ejecucion.
 
 1- Encapsulamiento de clases.
 
@@ -19,7 +25,7 @@ Clona el repositorio desde GitHub:
 git clone https://https://github.com/carcarmona-prog/LlanquihueTourAppS4.git
 Abre el proyecto en IntelliJ IDEA.
 
-Ejecuta el archivo Main.java desde el paquete app.
+Ejecuta el archivo Main.java desde el paquete ui.
 
 Sigue las instrucciones en consola o en la interfaz gráfica (si corresponde).
 
