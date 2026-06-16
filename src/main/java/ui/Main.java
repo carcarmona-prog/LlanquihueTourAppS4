@@ -20,7 +20,8 @@ public class Main  {
        List<Destinos> listaDestinos = gestor.getListaDestinos();
 
 
-        System.out.println("====OBJETOS LEÍDOS DESDE EL DATOS.TXT====\n");
+        System.out.println("====LISTA LEÍDA DESDE DATOS.TXT====\n");
+        System.out.println("implementation 1:\n");
 
         if(listaDestinos.isEmpty()){
             System.out.println("lista vacia");
@@ -33,12 +34,14 @@ public class Main  {
         }
 
         System.out.println("=========LISTA DE PRECIOS==========");
+        System.out.println("implementation 2:");
         for(Destinos destino : listaDestinos){
             System.out.println("💰 $:  " + destino.getPrecio());
 
         }
 
         System.out.println("=========DURACIÓN DE LOS VIAJES==========");
+        System.out.println("implementation 3:");
         for(Destinos destino : listaDestinos){
             System.out.println("⏱️ tiempo estimado: " + destino.getHorasDeViaje() + " minutos");
         }
