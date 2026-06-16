@@ -48,7 +48,7 @@ public class Destinos {
     }
 
     public double getPrecio() {
-        return precio;
+        return this.precio;
     }
 
     public void setPrecio(double precio) {
@@ -57,11 +57,6 @@ public class Destinos {
 
     @Override
     public String toString() {
-        return "Destinos{" +
-                "destino='" + destino + '\'' +
-                ", region='" + region + '\'' +
-                ", horasDeViaje=" + horasDeViaje +
-                ", precio=" + precio +
-                '}';
+        return "•Destino: " + destino + "Region: (" + region + ") — ⏱️ " + horasDeViaje + "h — 💰 $" + precio;
     }
 }

@@ -8,16 +8,17 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
- public class GestorDeDatos extends Destinos  {
+ public class GestorDeDatos  {
 
     String archivo = "src/main/resources/datos.txt";
 
     List<Destinos> listaDestinos = new ArrayList<>();
+     private List<Destinos> precio;
 
 
-    /** Creamos una clase Public para realizar la lógica de separar los atributos leídos por el FileReader,
-     * dentro de un try catch para evitar errores de lectura
-     */
+     /** Creamos una clase Public para realizar la lógica de separar los atributos leídos por el FileReader,
+      * dentro de un try catch para evitar errores de lectura
+      */
 
     public void cargarListaDestinos () {
 
@@ -58,4 +59,6 @@ import java.util.List;
          return this.listaDestinos;
      }
 
+
  }
+
