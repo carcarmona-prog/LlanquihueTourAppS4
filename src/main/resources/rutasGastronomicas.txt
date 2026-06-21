@@ -1,0 +1,4 @@
+La Marca;Puerto Varas;120;25000.0
+Club de Yates;Puerto Montt;120;30000.0
+Fogon de Ancud;Ancud;60;18000.0
+Causa Roots;Castro;120;22000.0

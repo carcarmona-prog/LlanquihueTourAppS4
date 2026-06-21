@@ -1,5 +1,3 @@
-//datos de los tours ofrecidos
-
 Costanera de llanquihue;Llanquihue;40;100.000
 Humedales urbanos;Llanquihue;50;120.000
 Saltos del Petrohué;Alrededores;120;180.000

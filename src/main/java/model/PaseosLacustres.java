@@ -1,27 +1,21 @@
 package model;
 
-/**
- * Creamos una clase llamada Destinos donde guardaremos atributos para volverlos objetos manejables.
- */
-public class Destinos {
+public class PaseosLacustres  {
 
     private String destino;
     private String region;
     private int horasDeViaje;
     private double precio;
 
-    // Constructores:
-
-    public Destinos(){
+    public PaseosLacustres() {
 
     }
 
-    public Destinos(String destino, String region, int horasDeViaje, double precio) {
+    public PaseosLacustres(String destino, String region, int horasDeViaje, double precio) {
         this.destino = destino;
         this.region = region;
         this.horasDeViaje = horasDeViaje;
         this.precio = precio;
-
     }
 
     public String getDestino() {
@@ -49,7 +43,7 @@ public class Destinos {
     }
 
     public double getPrecio() {
-        return this.precio;
+        return precio;
     }
 
     public void setPrecio(double precio) {
@@ -62,11 +56,10 @@ public class Destinos {
     }
 
     public String getNombre() {
-        return destino;
+            return destino;
     }
 
-
     public int getHoras() {
-        return horasDeViaje;
+            return this.horasDeViaje;
     }
 }
