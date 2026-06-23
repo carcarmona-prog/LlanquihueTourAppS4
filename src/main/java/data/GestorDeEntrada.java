@@ -9,8 +9,12 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * Creamos una clase extendida de Destinos, donde creamos las metodos para ingresar nuevas actividades
+ * y guardarlas en su respectivo archivo.txt
+ */
 
-public class GestorDeEntrada extends Destinos {
+ public class GestorDeEntrada extends Destinos {
 
 
     public static class GestorArchivos {
@@ -44,6 +48,11 @@ public class GestorDeEntrada extends Destinos {
         }
 
 
+        /**
+         * Metodo privado donde escribe y crea nueva línea en el archivo
+         * @param archivo
+         * @param registro
+         */
         private void escribirArchivo(String archivo, String registro) {
             try (FileWriter fw = new FileWriter(archivo, true)) {
                 fw.write(registro + System.lineSeparator());
@@ -55,5 +64,5 @@ public class GestorDeEntrada extends Destinos {
 
         }
     }
-}
+ }
 

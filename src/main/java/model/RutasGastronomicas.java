@@ -1,6 +1,8 @@
 package model;
 
-
+/**
+ * Clase que contiene los atributos de la actividad "rutas gastronómicas".
+ */
 
 public class RutasGastronomicas   {
 
@@ -60,7 +62,4 @@ public class RutasGastronomicas   {
         return nombreRestaurante;
     }
 
-    public int getHoras() {
-        return this.horasDeViaje;
-    }
 }

@@ -1,5 +1,9 @@
 package model;
 
+/**
+ * Clase que contiene los atributos de los paseos lacustres.
+ */
+
 public class PaseosLacustres  {
 
     private String destino;

@@ -11,11 +11,20 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Creamos una clase llamada GestorDeDatos donde el programa carga y lee los datos,
+ * provenientes de archivos .csv
+ */
+
  public class GestorDeDatos  {
+
+
+    /**
+     * Creamos las listas de cada ruta donde guardaremos la lectura de los archivos correspondientes
+     */
 
     String archivoDestinos = "src/main/resources/listaDestinos.txt";
      List<Destinos> listaDestinos = new ArrayList<>();
-
 
      String archivoGastronomico = "src/main/resources/rutasGastronomicas.txt";
      List<RutasGastronomicas> listaGastronomica = new ArrayList<>();
@@ -28,7 +37,7 @@ import java.util.List;
 
 
 
-     /** Creamos una clase Public para realizar la lógica de separar los atributos leídos por el FileReader,
+     /** Creamos una clase pública para realizar la lógica de separar los atributos leídos por el FileReader,
       * dentro de un try catch para evitar errores de lectura
       */
 
@@ -67,11 +76,20 @@ import java.util.List;
         }
 
     }
+
+    /**
+     * Creamos un metodo público para llamar la lista de destinos creada
+     * @return la lista creada después de separar y leer las partes del archivo.
+     */
      public List<Destinos> getListaDestinos() {
          return this.listaDestinos;
      }
 
-     public void cargarRutaGastronomica(){
+    /**
+     * Creamos un metodo donde cargamos los datos leídos del archivo.
+     */
+
+    public void cargarRutaGastronomica(){
         try{
 
             List<String> lineas = Files.readAllLines(Paths.get(archivoDestinos));
@@ -103,6 +121,10 @@ import java.util.List;
          return this.listaGastronomica;
      }
 
+    /**
+     * Creamos un metodo donde cargamos los datos leídos del archivo.
+     */
+
      public void cargarPaseosLacustres(){
         try{
             List<String>lineas = Files.readAllLines(Paths.get(archivoPaseos));
@@ -129,6 +151,11 @@ import java.util.List;
         }
 
      }
+
+    /**
+     * Creamos un metodo público para llamar la lista de paseos creada
+     * @return la lista creada después de separar y leer las partes del archivo.
+     */
      public List<PaseosLacustres> getListaPaseosLacustres() {
         return this.listaPaseosLacustres;
      }
@@ -158,6 +185,11 @@ import java.util.List;
             System.out.println("Error en GestorDeDatos (Formato de número): " + e.getMessage());
         }
      }
+
+    /**
+     * Creamos un metodo público para llamar la lista de excursiones creada.
+     * @return la lista creada después de separar y leer las partes del archivo.
+     */
      public List<ExcursionesCulturales> getListaExcursiones(){
         return this.listaExcursiones;
      }

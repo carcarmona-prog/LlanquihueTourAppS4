@@ -1,5 +1,9 @@
 package model;
 
+/**
+ * Creamos una clase llamada ExcursionesCulturales donde guardaremos atributos para volverlos objetos manejables.
+ */
+
 public class ExcursionesCulturales {
 
     private String centroCultural;
