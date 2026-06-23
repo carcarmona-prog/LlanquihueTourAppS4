@@ -9,7 +9,7 @@ Analista Programador Computacional.
 Sede: Duoc uc sede online
 
 📘 Descripción general del sistema
-LlanquihueTourAppS4: Este programa se basa en leer un archivod de texto o csv mediante interfaces y Arraylist con estructuras separadas y ordenadas, creando clases especificas para su ejecucion, implementando nuevas funciones donde a traves de un menu opcional filtramos datos y mostramos las actividades que dispone la empresa Llanquihue tours, haviendo enfasis en separar la estructura del programa segun las bases de un progama creado con maven.
+LlanquihueTourAppS4: Este programa se basa en leer un archivo de texto o csv mediante interfaces y Arraylist con estructuras separadas y ordenadas, creando clases específicas para su ejecución, en esta semana 5 implementamos nuevas funciones donde a traves de un menu opcional filtramos datos y mostramos las actividades que dispone la empresa Llanquihue tours, haciendo énfasis en separar la estructura del programa según las bases de un program creado con maven.
 
 1- Encapsulamiento de clases.
 
