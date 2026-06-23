@@ -7,7 +7,7 @@ import model.Destinos;
 import model.ExcursionesCulturales;
 import model.PaseosLacustres;
 import model.RutasGastronomicas;
-import service.FiltroDePrecios;
+
 
 import java.io.IOException;
 import java.util.ArrayList;
