@@ -7,30 +7,15 @@ package model;
 
 public class ExcursionesCulturales extends Destinos{
 
-    private String centroCultural;
+    public ExcursionesCulturales(String destino, String region, int horasDeViaje, double precio) {
 
-
-
-    public ExcursionesCulturales(String centroCultural, String region, int horasDeViaje, double precio) {
-
-        super(centroCultural,region, horasDeViaje, precio);
-        this.centroCultural = centroCultural;
-
+        super(destino, region, horasDeViaje, precio);
 
     }
-
-    public String getCentroCultural() {
-        return centroCultural;
-    }
-
-    public void setCentroCultural(String centroCultural) {
-        this.centroCultural = centroCultural;
-    }
-
 
 
     @Override
     public String toString() {
-        return "•Excursion cultural: " + centroCultural + " |Region: (" + region + ")  |— ⏱️ " + horasDeViaje + " min |— 💰 $" + precio;
+        return "•Excursion cultural: " + destino + " |Region: (" + region + ")  |— ⏱️ " + horasDeViaje + " min |— 💰 $" + precio;
     }
 }

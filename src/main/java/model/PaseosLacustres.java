@@ -16,7 +16,7 @@ public class PaseosLacustres extends Destinos  {
 
     @Override
     public String toString() {
-        return "•Paseo lacustre: " + destino + " |Region: (" + region + ")  |— ⏱️ " + horasDeViaje + " min |— 💰 $" + precio;
+        return "•Paseos lacustre: " + destino + " |Region: (" + region + ")  |— ⏱️ " + horasDeViaje + " min |— 💰 $" + precio;
     }
 
 }

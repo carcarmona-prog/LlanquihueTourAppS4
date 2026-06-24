@@ -43,7 +43,7 @@ import java.util.List;
 
         public void guardarExcursionesCulturales(String archivo, List<ExcursionesCulturales> lista, ExcursionesCulturales nuevo) {
             lista.add(nuevo);
-            String registro = nuevo.getCentroCultural() + ";" + nuevo.getRegion() + ";" + nuevo.getHorasDeViaje() + ";" + nuevo.getPrecio()+"\n";
+            String registro = nuevo.getDestino() + ";" + nuevo.getRegion() + ";" + nuevo.getHorasDeViaje() + ";" + nuevo.getPrecio()+"\n";
             escribirArchivo(archivo, registro);
         }
 

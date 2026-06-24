@@ -5,42 +5,25 @@ package model;
  * Hereda atributos de Destino.
  */
 
-public class RutasGastronomicas extends Destinos  {
-
-    private String nombreRestaurante;
+ public class RutasGastronomicas extends Destinos  {
 
 
 
-    public RutasGastronomicas(String nombreRestaurante, String region, int horasDeViaje, double precio) {
-        super(nombreRestaurante, region, horasDeViaje, precio);
-        this.nombreRestaurante = nombreRestaurante;
 
-    }
+    public RutasGastronomicas(String destino, String region, int horasDeViaje, double precio) {
+        super(destino, region, horasDeViaje, precio);
 
-    public String getNombreRestaurante() {
-        return nombreRestaurante;
-    }
 
-    public void setNombreRestaurante(String nombreRestaurante) {
-        this.nombreRestaurante = nombreRestaurante;
     }
 
     public String getCiudad() {
         return region;
     }
 
-    public void setCiudad(String ciudad) {
-        this.region = ciudad;
-    }
-
-
     @Override
     public String toString() {
-        return "•Restaurante disponible: " + nombreRestaurante + " |Ciudad: (" + region + ")  |— ⏱️ " + horasDeViaje + " min |— 💰 $" + precio;
+        return "•Restaurante disponible: " + destino + " |Region: (" + region + ")  |— ⏱️ " + horasDeViaje + " min |— 💰 $" + precio;
     }
 
-    public String getNombre() {
-        return nombreRestaurante;
-    }
 
-}
+ }
