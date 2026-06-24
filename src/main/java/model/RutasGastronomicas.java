@@ -2,6 +2,7 @@ package model;
 
 /**
  * Clase que contiene los atributos de la actividad "rutas gastronómicas".
+ * Hereda atributos de Destino.
  */
 
 public class RutasGastronomicas extends Destinos  {

@@ -2,6 +2,7 @@ package model;
 
 /**
  * Creamos una clase llamada Destinos donde guardaremos atributos para volverlos objetos manejables.
+ * Esta clase la determinamos protected para que herede atributos a las subclases que la necesiten.
  */
 public class Destinos {
 

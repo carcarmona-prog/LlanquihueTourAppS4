@@ -2,6 +2,7 @@ package model;
 
 /**
  * Creamos una clase llamada ExcursionesCulturales donde guardaremos atributos para volverlos objetos manejables.
+ * Esta clase hereda atributos de Destinos.
  */
 
 public class ExcursionesCulturales extends Destinos{

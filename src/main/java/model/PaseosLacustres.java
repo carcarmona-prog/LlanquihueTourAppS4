@@ -2,6 +2,7 @@ package model;
 
 /**
  * Clase que contiene los atributos de los paseos lacustres.
+ * Hereda atributos de la clase padre Destino.
  */
 
 public class PaseosLacustres extends Destinos  {
