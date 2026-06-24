@@ -4,7 +4,7 @@ package model;
  * Clase que contiene los atributos de la actividad "rutas gastronómicas".
  */
 
-public class RutasGastronomicas   {
+public class RutasGastronomicas extends Destinos  {
 
     private String nombreRestaurante;
     private String ciudad;

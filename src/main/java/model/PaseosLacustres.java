@@ -4,7 +4,7 @@ package model;
  * Clase que contiene los atributos de los paseos lacustres.
  */
 
-public class PaseosLacustres  {
+public class PaseosLacustres extends Destinos  {
 
     private String destino;
     private String region;

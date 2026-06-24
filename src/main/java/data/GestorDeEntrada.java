@@ -14,7 +14,7 @@ import java.util.List;
  * y guardarlas en su respectivo archivo.txt
  */
 
- public class GestorDeEntrada extends Destinos {
+ public class GestorDeEntrada {
 
 
     public static class GestorArchivos {
