@@ -1,7 +1,7 @@
-Ruta de las Iglesias de Chiloe Patrimoniales;Castro;180;35000
-Museo Colonial Aleman;Frutillar;120;6000
-Ruta Historica de los Fuertes de Ancud;Ancud;180;12000
-Tour del Sitio Paleontologico Pilauco;Osorno;140;5000
-Recorrido Patrimonial Barrio Puerto;Puerto Montt;190;8000
+Ruta de las Iglesias de Chiloe Patrimoniales;Castro;180;35.000
+Museo Colonial Aleman;Frutillar;120;6.000
+Ruta Historica de los Fuertes de Ancud;Ancud;180;12.000
+Tour del Sitio Paleontologico Pilauco;Osorno;140;5.000
+Recorrido Patrimonial Barrio Puerto;Puerto Montt;190;8.000
 
 
