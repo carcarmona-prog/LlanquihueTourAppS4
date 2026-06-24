@@ -7,9 +7,6 @@ import model.Destinos;
 import model.ExcursionesCulturales;
 import model.PaseosLacustres;
 import model.RutasGastronomicas;
-
-
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
