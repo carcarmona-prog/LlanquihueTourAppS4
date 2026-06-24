@@ -1,6 +1,6 @@
 👤 Autor del proyecto:
 
- Carlos Estivens Carmona Barrteo
+ Carlos Estivens Carmona Barreto
 
 Carrera:
 
