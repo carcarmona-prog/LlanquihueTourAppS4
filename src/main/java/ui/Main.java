@@ -145,6 +145,7 @@ import static service.FiltroDePrecios.leerPrecios;
 
                         System.out.println("\nExcursiones culturales:");
                         listaExcursiones.forEach(System.out::println);
+                        break;
 
 
                     case 7:
@@ -166,7 +167,7 @@ import static service.FiltroDePrecios.leerPrecios;
 
 
                     case 8:
-                        System.out.println(" Saliendo del programa...");
+                        System.out.println(" Gracias por usar el Gestor de Llanquihue tours!");
                         break;
 
                     default:
