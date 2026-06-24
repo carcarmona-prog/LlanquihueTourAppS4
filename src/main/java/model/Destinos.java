@@ -5,16 +5,12 @@ package model;
  */
 public class Destinos {
 
-    private String destino;
-    private String region;
-    private int horasDeViaje;
-    private double precio;
+    protected String destino;
+    protected String region;
+    protected int horasDeViaje;
+    protected double precio;
 
     // Constructores:
-
-    public Destinos(){
-
-    }
 
     public Destinos(String destino, String region, int horasDeViaje, double precio) {
         this.destino = destino;
@@ -58,7 +54,7 @@ public class Destinos {
 
     @Override
     public String toString() {
-        return "•Destino: " + destino + "Region: (" + region + ") — ⏱️ " + horasDeViaje + "min — 💰 $" + precio;
+        return "•Destino: " + destino + " |Region: (" + region + ")  |— ⏱️ " + horasDeViaje + " min |— 💰 $" + precio;
     }
 
     public String getNombre() {

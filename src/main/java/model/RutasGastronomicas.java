@@ -7,19 +7,13 @@ package model;
 public class RutasGastronomicas extends Destinos  {
 
     private String nombreRestaurante;
-    private String ciudad;
-    private int horasDeViaje;
-    private double precio;
 
-    public RutasGastronomicas() {
 
-    }
 
-    public RutasGastronomicas(String nombreRestaurante, String ciudad, int horasDeViaje, double precio) {
+    public RutasGastronomicas(String nombreRestaurante, String region, int horasDeViaje, double precio) {
+        super(nombreRestaurante, region, horasDeViaje, precio);
         this.nombreRestaurante = nombreRestaurante;
-        this.ciudad = ciudad;
-        this.horasDeViaje = horasDeViaje;
-        this.precio = precio;
+
     }
 
     public String getNombreRestaurante() {
@@ -31,31 +25,17 @@ public class RutasGastronomicas extends Destinos  {
     }
 
     public String getCiudad() {
-        return ciudad;
+        return region;
     }
 
     public void setCiudad(String ciudad) {
-        this.ciudad = ciudad;
+        this.region = ciudad;
     }
 
-    public int getHorasDeViaje() {
-        return horasDeViaje;
-    }
 
-    public void setHorasDeViaje(int horasDeViaje) {
-        this.horasDeViaje = horasDeViaje;
-    }
-
-    public double getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(double precio) {
-        this.precio = precio;
-    }
     @Override
     public String toString() {
-        return "•Restaurante disponible: " + nombreRestaurante + "Ciudad: (" + ciudad + ") — ⏱️ " + horasDeViaje + "min — 💰 $" + precio;
+        return "•Restaurante disponible: " + nombreRestaurante + " |Ciudad: (" + region + ")  |— ⏱️ " + horasDeViaje + " min |— 💰 $" + precio;
     }
 
     public String getNombre() {

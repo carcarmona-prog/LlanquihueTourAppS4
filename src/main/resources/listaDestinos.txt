@@ -6,3 +6,5 @@ Volcán Osorno;Osorno;140;200.000
 Puerto Varas;Llanquihue;120;150.000
 rio valdivia;bio bio;140;120.000
 
+valdivia;bio bio;90;120.0
+
