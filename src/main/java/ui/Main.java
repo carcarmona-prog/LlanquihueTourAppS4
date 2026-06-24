@@ -25,16 +25,18 @@ import static service.FiltroDePrecios.leerPrecios;
  public class Main {
     public static void main(String[] args) throws IOException {
 
-        GestorDeDatos gestor = new GestorDeDatos();
-        gestor.cargarListaDestinos();
-        gestor.cargarRutaGastronomica();
-        gestor.cargarPaseosLacustres();
-        gestor.cargarExcursionesCulturales();
 
-        List<Destinos> listaDestinos = gestor.getListaDestinos();
-        List<RutasGastronomicas> listaGastronomicas = gestor.getListaGastronomica();
-        List<PaseosLacustres> listaPaseos = gestor.getListaPaseosLacustres();
-        List<ExcursionesCulturales> listaExcursiones = gestor.getListaExcursiones();
+            GestorDeDatos gestor = new GestorDeDatos();
+            gestor.cargarListaDestinos();
+            gestor.cargarRutaGastronomica();
+            gestor.cargarPaseosLacustres();
+            gestor.cargarExcursionesCulturales();
+
+            List<Destinos> listaDestinos = gestor.getListaDestinos();
+            List<RutasGastronomicas> listaGastronomicas = gestor.getListaGastronomica();
+            List<PaseosLacustres> listaPaseos = gestor.getListaPaseosLacustres();
+            List<ExcursionesCulturales> listaExcursiones = gestor.getListaExcursiones();
+
 
 
 
@@ -49,9 +51,9 @@ import static service.FiltroDePrecios.leerPrecios;
             GestorArchivos gestorArchivos = new GestorArchivos();
 
             List<Destinos> listaDestinosArchivo = new ArrayList<>();
-            List<PaseosLacustres> paseosLacustresList = new ArrayList<>();
+            List<PaseosLacustres> paseosLacustresArchivo = new ArrayList<>();
             List<RutasGastronomicas> listaGastronomicasArchivo = new ArrayList<>();
-            List<ExcursionesCulturales> excursionesCulturales = new ArrayList<>();
+           List<ExcursionesCulturales> listaExcursionesArchivo = new ArrayList<>();
 
             int opcion;
 
@@ -98,7 +100,7 @@ import static service.FiltroDePrecios.leerPrecios;
                         sc.nextLine();
 
                         PaseosLacustres nuevoPaseo = new PaseosLacustres(nombrePaseo, regionPaseo, horasPaseo, precioPaseo);
-                        gestorArchivos.guardarPaseo("src/main/resources/paseosLacustres.txt", paseosLacustresList, nuevoPaseo);
+                        gestorArchivos.guardarPaseo("src/main/resources/paseosLacustres.txt", paseosLacustresArchivo, nuevoPaseo);
                         break;
 
                     case 3:
@@ -130,7 +132,7 @@ import static service.FiltroDePrecios.leerPrecios;
                         sc.nextLine();
 
                         ExcursionesCulturales nuevaExcursion = new ExcursionesCulturales(nombreExc, regionExc, horasExc, precioExc);
-                        gestorArchivos.guardarExcursionesCulturales("src/main/resources/excursionesCulturales.txt", listaExcursiones, nuevaExcursion);
+                        gestorArchivos.guardarExcursionesCulturales("src/main/resources/excursionesCulturales.txt", listaExcursionesArchivo, nuevaExcursion);
                         break;
 
                     case 6:

@@ -50,8 +50,6 @@ import java.util.List;
 
         /**
          * Metodo privado donde escribe y crea nueva línea en el archivo
-         * @param archivo
-         * @param registro
          */
         private void escribirArchivo(String archivo, String registro) {
             try (FileWriter fw = new FileWriter(archivo, true)) {
