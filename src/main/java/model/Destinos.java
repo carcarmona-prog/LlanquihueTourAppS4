@@ -25,37 +25,14 @@ public class Destinos {
         return destino;
     }
 
-    public void setDestino(String destino) {
-        this.destino = destino;
-    }
 
     public String getRegion() {
         return region;
     }
 
-    public void setRegion(String region) {
-        this.region = region;
-    }
 
     public int getHorasDeViaje() {
         return horasDeViaje;
-    }
-
-    public void setHorasDeViaje(int horasDeViaje) {
-        this.horasDeViaje = horasDeViaje;
-    }
-
-    public double getPrecio() {
-        return this.precio;
-    }
-
-    public void setPrecio(double precio) {
-        this.precio = precio;
-    }
-
-    @Override
-    public String toString() {
-        return "•Destino: " + destino + " |Region: (" + region + ")  |— ⏱️ " + horasDeViaje + " min |— 💰 $" + precio;
     }
 
     public String getNombre() {
@@ -63,7 +40,17 @@ public class Destinos {
     }
 
 
-    public int getHoras() {
-        return horasDeViaje;
+
+    public double getPrecio() {
+        return this.precio;
     }
+
+
+    @Override
+    public String toString() {
+        return "•Destino: " + destino + " |Region: (" + region + ")  |— ⏱️ " + horasDeViaje + " min |— 💰 $" + precio;
+    }
+
+
+
 }

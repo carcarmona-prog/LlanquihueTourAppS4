@@ -2,20 +2,42 @@ package model;
 
 /**
  * Creamos una clase llamada ExcursionesCulturales donde guardaremos atributos para volverlos objetos manejables.
- * Esta clase hereda atributos de Destinos.
+ *
  */
 
-public class ExcursionesCulturales extends Destinos{
+public class ExcursionesCulturales {
 
-    public ExcursionesCulturales(String destino, String region, int horasDeViaje, double precio) {
+    private final Destinos  destinos;
+    private final String nombreExcursion;
 
-        super(destino, region, horasDeViaje, precio);
 
+    public ExcursionesCulturales(Destinos destinos, String nombreExcursion) {
+        this.destinos = destinos;
+        this.nombreExcursion = nombreExcursion;
     }
+
+    public String getDestino() {
+        return destinos.getDestino();
+    }
+
+    public String getRegion() {
+        return destinos.getRegion();
+    }
+
+    public int getHorasDeViaje() {
+        return destinos.getHorasDeViaje();
+    }
+    public double getPrecio() {
+        return destinos.getPrecio();
+    }
+
 
 
     @Override
     public String toString() {
-        return "•Excursion cultural: " + destino + " |Region: (" + region + ")  |— ⏱️ " + horasDeViaje + " min |— 💰 $" + precio;
+        return "•Excursion cultural: " + nombreExcursion + " | " + destinos.toString();
     }
+
+
+
 }

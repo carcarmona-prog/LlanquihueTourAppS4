@@ -96,7 +96,8 @@ import static service.FiltroDePrecios.leerPrecios;
                         double precioPaseo = sc.nextDouble();
                         sc.nextLine();
 
-                        PaseosLacustres nuevoPaseo = new PaseosLacustres(nombrePaseo, regionPaseo, horasPaseo, precioPaseo);
+                        Destinos destinos = new Destinos(nombrePaseo, regionPaseo, horasPaseo, precioPaseo);
+                        PaseosLacustres nuevoPaseo = new PaseosLacustres(destinos, "");
                         gestorArchivos.guardarPaseo("src/main/resources/paseosLacustres.txt", paseosLacustresArchivo, nuevoPaseo);
                         break;
 
@@ -112,7 +113,9 @@ import static service.FiltroDePrecios.leerPrecios;
                         double precioRuta = sc.nextDouble();
                         sc.nextLine();
 
-                        RutasGastronomicas nuevaRuta = new RutasGastronomicas(nombreRest, ciudad, horasRuta, precioRuta);
+
+                        Destinos destino = new Destinos(nombreRest, ciudad, horasRuta, precioRuta);
+                        RutasGastronomicas nuevaRuta = new RutasGastronomicas(destino, nombreRest);
                         gestorArchivos.guardarRutaGastronomica("src/main/resources/RutasGastronomicas.txt", listaGastronomicasArchivo, nuevaRuta);
                         break;
 
@@ -128,7 +131,8 @@ import static service.FiltroDePrecios.leerPrecios;
                         double precioExc = sc.nextDouble();
                         sc.nextLine();
 
-                        ExcursionesCulturales nuevaExcursion = new ExcursionesCulturales(nombreExc, regionExc, horasExc, precioExc);
+                        Destinos destinoBase = new Destinos(nombreExc, regionExc, horasExc, precioExc);
+                        ExcursionesCulturales nuevaExcursion = new ExcursionesCulturales(destinoBase,"");
                         gestorArchivos.guardarExcursionesCulturales("src/main/resources/excursionesCulturales.txt", listaExcursionesArchivo, nuevaExcursion);
                         break;
 

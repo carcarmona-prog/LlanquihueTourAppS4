@@ -3,3 +3,4 @@ Navegacion Isla Loreley;Frutillar;60;12.000
 Tour de Kayak Lago Llanquihue;Puerto Varas;250;25.000
 Catamaran Bandurria Lago Espolon;Futaleufu;180;35.000
 Paseo en Lancha Lago Puyehue;Entre Lagos;90;35.000
+kayak;bio bio;80;80.0

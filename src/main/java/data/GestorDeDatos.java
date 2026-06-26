@@ -92,7 +92,7 @@ import java.util.List;
     public void cargarRutaGastronomica(){
         try{
 
-            List<String> lineas = Files.readAllLines(Paths.get(archivoDestinos));
+            List<String> lineas = Files.readAllLines(Paths.get(archivoGastronomico));
 
             for (String linea : lineas) {
                 if (linea.trim().isEmpty()) continue;
@@ -103,11 +103,13 @@ import java.util.List;
                     continue;
                 }
                 String nombreRestaurante = partes[0];
-                String cuidad = partes[1];
+                String region= partes[1];
                 int horasDeViaje = Integer.parseInt(partes[2]);
                 double precio = Double.parseDouble(partes[3]);
 
-                RutasGastronomicas datosGastronomicos = new RutasGastronomicas(nombreRestaurante, cuidad, horasDeViaje, precio);
+
+                Destinos destinos = new Destinos(nombreRestaurante, region, horasDeViaje, precio);
+                RutasGastronomicas datosGastronomicos = new RutasGastronomicas(destinos,nombreRestaurante);
                 listaGastronomica.add(datosGastronomicos);
             }
         }catch(IOException e){
@@ -141,7 +143,8 @@ import java.util.List;
                 int horasDeViaje = Integer.parseInt(partes[2]);
                 double precio = Double.parseDouble(partes[3]);
 
-                PaseosLacustres paseosLacustres = new PaseosLacustres(destino,region, horasDeViaje, precio);
+                Destinos paseo = new Destinos(destino, region, horasDeViaje, precio);
+                PaseosLacustres paseosLacustres = new PaseosLacustres(paseo, "");
                 listaPaseosLacustres.add(paseosLacustres);
             }
         }catch(IOException e){
@@ -170,12 +173,14 @@ import java.util.List;
                     System.out.println(linea);
                     continue;
                 }
-                String centroCultural= partes[0];
+                String nombreExcursion= partes[0];
                 String region = partes[1];
                 int horasDeViaje = Integer.parseInt(partes[2]);
                 double precio = Double.parseDouble(partes[3]);
 
-                ExcursionesCulturales excursionesCulturales = new ExcursionesCulturales(centroCultural, region, horasDeViaje, precio);
+
+                Destinos destino = new Destinos(nombreExcursion, region, horasDeViaje, precio);
+                ExcursionesCulturales excursionesCulturales = new ExcursionesCulturales(destino,"");
                 listaExcursiones.add(excursionesCulturales);
             }
 
